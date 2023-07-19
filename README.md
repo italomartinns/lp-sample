@@ -1,2 +1,1 @@
-# lp-sample
-lp sample
+Just a lp sample.
