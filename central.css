@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap'); /* font-family: 'Tourney', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap'); /* font-family: 'Play', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap'); /* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=swap');
+
+
+/* RESET CSS */
+* { 
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* GENERAL */
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    max-width: 1920px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 12pt;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Tourney', cursive;
+    user-select: none;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0 15px 0;
+}
+
+nav a:hover {
+    color: #04e6f4;
+    transition: 200ms;
+}
+
+.botao {
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid 2px #04e6f4;
+    color: #04e6f4;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.botao:hover {
+    background-color: #04e6f4;
+    color: black;
+    transition: 200ms;
+}
+
+.sec-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    max-width: 1920px;
+    background-image: url("imgs/header back.webp");
+    background-repeat: no-repeat;
+    background-position: 60% center;
+    background-size: cover;
+}
+
+.sec-1-box {
+    text-align: justify;
+    margin: 100px 20px 100px 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 680px;
+}
+
+.sec-1 p {
+    margin: 0px 0px 20px 0px;
+}
+
+.vacuo {
+    width: 500px;
+    min-width: 500px;
+    height: 700px;
+}
+
+.sec-2 {
+    align-items: flex-start;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+}
+
+.sec-2-square {
+    background-color: rgb(29, 29, 29);
+    border-radius: 20px;
+    max-height: fit-content;
+    width: 300px;
+    padding: 30px;
+    margin: -110px 20px 0px 20px;
+}
+
+.sec-2-square:hover {
+    box-shadow: 0px 0px 4px 4px #04e6f4;
+}
+
+.sec-2 h1 {
+    margin: 10px 0px 10px 0px;
+}
+
+.icone {
+    font-family: 'Material Icons';
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 30pt;
+    border-radius: 50%;
+    user-select: none;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.vacuo{
+    width: 400px;
+    min-width: 400px;
+}
+.sec-2 {
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
+    height: 100%;
+}
+.sec-2-square:first-child {
+    margin-top: -100px;
+}
+.sec-2-square {
+    margin: 20px 40px 20px 40px;
+}
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+.header-links {
+    display: none;
+}
+.vacuo{
+    display: none;
+}
+.mobile-pic {
+    background-image: url("imgs/header back.webp");
+    background-repeat: no-repeat;
+    background-position: 75% top;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+.sec-1 {
+    background-image: none;
+    flex-direction: column;
+}
+.sec-1-box {
+    margin: 20px;
+}
+.sec-2 {
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
+    height: 100%;
+}
+.sec-2-square {
+    margin: 20px 40px 20px 40px;
+}
+}
